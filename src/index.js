@@ -7,7 +7,9 @@ const App = () => {
   const loop = [];
   const timeAt =() => `Today at ${faker.random.number(12)} :00`;
   for (let i = 0; i < 3; i++) {
-    loop.push(<CommentDetail author={faker.name.firstName()} comment={faker.hacker.phrase()} timeAt={timeAt()} image={faker.image.avatar()}/>)
+    loop.push(
+      <CommentDetail author={faker.name.firstName()} comment={faker.hacker.phrase()} timeAt={timeAt()} image={faker.image.avatar()}/>
+    );
   }
 
 
